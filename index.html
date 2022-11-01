@@ -2,11 +2,17 @@
     <head>
         <tittle></tittle>
         <style>
+            @font-face{
+                font-family: 'Digital';
+                src:url('digital-7\ \(italic\).ttf') format('truetype')
+            }
             .calculator-container{
                 width: 400px;
                 background-color: #7575a3;
                 padding: 20px;
                 border-radius: 10px;
+                display: block;
+                margin: auto;
 
 
             }
@@ -28,7 +34,8 @@
             }
             .btn:hover{
                 cursor: pointer;
-                box-shadow: 0px 2px 5px grey;
+                box-shadow: 0px 2px 5px white;
+                transition: 0.5s;
             }
             .bg-tomato{
                 background-color: orange;
@@ -40,12 +47,19 @@
                 height:70px;
                 margin-bottom: 20px;
                 font-size: 70px;
+                background-color:#c2c2d6 ;
+                font-family: 'Digital';
+            }
+            .brand{
+                color: white;
+                font-weight: bold;
             }
 
         </style>
     </head>
     <body>
         <div class="calculator-container">
+            <span class="brand">RTC</span>
             <div class="row">
                 <input type="text"id="input" class="input-screen"/>
 
